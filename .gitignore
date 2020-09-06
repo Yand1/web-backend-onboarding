@@ -26,3 +26,5 @@ yarn-error.log*
 venv
 notes-backend/__pychache__
 *.pyc
+notes-backend/notes.egg-info/
+*.sqlite3

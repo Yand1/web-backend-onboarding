@@ -1,0 +1,11 @@
+#!/bin/bash
+
+set -Eeuo pipefail
+set -x
+
+cd notes-backend
+source venv/bin/activate
+export FLASK_APP=notes
+python -m flask run
+deactivate
+cd ../
