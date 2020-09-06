@@ -24,3 +24,5 @@ yarn-error.log*
 
 # Flask
 venv
+notes-backend/__pychache__
+*.pyc
