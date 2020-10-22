@@ -16,7 +16,7 @@ def html():
 # Route: /demo/jinja
 # Objective: Print some HTML with jinja templating
 @notes.app.route('/demo/jinja')
-def hello():
+def jinja():
     return 'Hello, World!'
 
 # Route: /demo/sql
