@@ -40,32 +40,20 @@ def sql():
 #            it to modify the corresponding note
 @notes.app.route('/demo/param/')
 def param():
-    return 'Hello, World!'
+    note = flask.request.args.get('note')
+
+    return "You sent the note: " + str(note)
 
 # Route: /demo/path
 # Objective: Take in a path parameter, and use it to
 #            modify the corresponding note
-@notes.app.route('/demo/path')
-def path():
-    return 'Hello, World!'
+@notes.app.route('/demo/path/<note>')
+def path(note):
+    return "You sent the note: " + str(note)
 
 # Route: /demo/body
 # Objective: Take in a json body, and use it to
 #            modify the corresponding note
 @notes.app.route('/demo/body')
 def body():
-    return 'Hello, World!'
-
-# Route: /demo/hello2
-# Objective: Take in a path parameter, and use it to
-#            return the corresponding note
-@notes.app.route('/demo/hello2')
-def hello2():
-    return 'Hello, World!'
-
-# Route: /demo/return
-# Objective: Take in a path parameter, and use it to
-#            return the corresponding note
-@notes.app.route('/demo/return')
-def ret():
     return 'Hello, World!'
