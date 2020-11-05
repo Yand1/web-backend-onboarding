@@ -39,17 +39,3 @@ def path():
 @notes.app.route('/demo/body')
 def body():
     pass
-
-# Route: /demo/hello2
-# Objective: Take in a path parameter, and use it to
-#            return the corresponding note
-@notes.app.route('/demo/hello2')
-def hello2():
-    pass
-
-# Route: /demo/return
-# Objective: Take in a path parameter, and use it to
-#            return the corresponding note
-@notes.app.route('/demo/return')
-def ret():
-    pass
