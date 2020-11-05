@@ -13,12 +13,6 @@ def hello():
 def html():
     pass
 
-# Route: /demo/jinja
-# Objective: Print some HTML with jinja templating
-@notes.app.route('/demo/jinja')
-def jinja():
-    pass
-
 # Route: /demo/sql
 # Objective: Execute a sql command on the database'
 @notes.app.route('/demo/sql')
