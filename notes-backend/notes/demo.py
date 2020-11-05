@@ -94,14 +94,14 @@ def names():
     firstnames_sorted_list = sorted(firstnames.items(), key=lambda x: x[1], reverse=True)
     output_str += "Firstnames:<ul>"
     for i in range(5):
-        output_str += "<li>" + firstnames_sorted_list[i][0] + ", count = " + str(firstnames_sorted_list[i][1]) + "<\li>"
+        output_str += "<li>" + firstnames_sorted_list[i][0] + ", count = " + str(firstnames_sorted_list[i][1]) + "</li>"
         
     output_str += "</ul>"
 
     lastnames_sorted_list = sorted(lastnames.items(), key=lambda x: x[1], reverse=True)
     output_str += "Lastnames:<ul>"
     for i in range(5):
-        output_str += "<li>" +lastnames_sorted_list[i][0] + ", count = " + str(lastnames_sorted_list[i][1]) + "<\li>"
+        output_str += "<li>" +lastnames_sorted_list[i][0] + ", count = " + str(lastnames_sorted_list[i][1]) + "</li>"
 
     output_str += """
         </ul>
