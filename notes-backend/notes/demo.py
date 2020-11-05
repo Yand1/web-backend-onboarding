@@ -39,3 +39,9 @@ def path():
 @notes.app.route('/demo/body')
 def body():
     pass
+
+# Route: /demo/names
+# Objective: Fit the demo program to a flask endpoint
+@notes.app.route('/demo/names')
+def names():
+    pass
