@@ -11,7 +11,23 @@ def hello():
 # Objective: Print some HTML
 @notes.app.route('/demo/html')
 def html():
-    return 'Hello, World!'
+    ret = """
+    <!DOCTYPE html>
+    <html>
+        <body>
+            <ul>
+    """
+
+    for i in range(3):
+        ret += "<li>element " + str(i) + "</li>"
+
+    ret += """
+            </ul>
+        </body>
+    </html>
+    """
+    
+    return ret
 
 # Route: /demo/jinja
 # Objective: Print some HTML with jinja templating
